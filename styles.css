@@ -1,0 +1,84 @@
+:root {
+    --gradient: linear-gradient(90deg, 
+      hsla(154, 100%, 76%, 1) 0%, 
+      hsla(234, 100%, 83%, 1) 50%, 
+      hsla(288, 100%, 81%, 1) 100%);
+    --green: hsla(154, 100%, 76%, 1);
+    --purple: hsla(234, 100%, 83%, 1);
+    --pink: hsla(288, 100%, 81%, 1);
+}
+
+body * {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--gradient);
+    color: white;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 2em;
+    color: black;
+    margin: 1em;
+}
+
+.task-form div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+
+.task-form input {
+    border: 1px solid black;
+    padding: 0.5em;    
+    margin-left: 0.5em;
+    height: 20px;
+}
+
+button {
+    background: var(--gradient);
+    border: none;  
+    padding: 0.5em; 
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+li {
+    background: white;
+    color: black;
+    padding: 1em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+li * {
+    margin: 0.25em;
+}
+
+.done {
+    filter: opacity(.5);
+    text-decoration: line-through;
+}
+
+section h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+i {
+    cursor: pointer;
+}
